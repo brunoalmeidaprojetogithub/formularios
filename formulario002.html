@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário002</title>
+    <style>
+        * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header{
+        text-align: center;
+    }
+    main{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO</h1>
+        <p>Criando um Formulário</p>
+    </header>
+    <main>
+        <h2>Inscrever-se</h2>
+        <p>
+            <form action="cadastro.php" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Dados do Aluno</legend>
+                <p>
+                    <label for="CNOME">NOME COMPLETO:</label>
+                    <input type="text" name="PNOME" id="CNOME" placeholder="NOME" required minlength="10">
+                </p>
+                 <p>
+                     <label for="MEDIA">MÉDIA:</label>
+                     <input type="number" name="23D" id="MEDIA" placeholder="0 a 10" min="0" max="10" step="0.1" required>
+                 </p>
+                 <p>
+                     <label for="LETIVO">PERÍODO LETIVO</label>
+                     <input type="month" name="ANE" id="LETIVO" required>
+                 </p>
+                 <p>
+                    <label for="PROVA">DIA DA PROVA</label>
+                    <input type="date" name="EXE" id="PROVA" required>
+                 </p>
+                 <p>
+                    <label for="hora">Horário da Prova</label>
+                    <input type="time" name="tempo" id="hora">
+                 </p>
+                 <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                 </p>
+            </fieldset>
+            </form>
+           
+        </p>
+</body>
+</html>
