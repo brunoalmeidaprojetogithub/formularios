@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios C e R</title>
+</head>
+   <style>
+      * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header{
+        text-align: center;
+    }
+    main{
+        position: relative;
+        text-align: center;
+        margin: auto;
+        min-width: 320px;
+        max-width: 700px;
+    }
+   </style>
+<body>
+    <header>
+        <h1>Formulario CheckBox e Radio</h1>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Informações</legend>
+            <form action="cadastro.php" method="post">
+                <label for="mas">Masculino</label>
+                <input type="radio" name="gen" id="mas"><br>
+                <label for="fem">Feminino</label>
+                <input type="radio" name="gen" id="fem"><br>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Preferências</legend>
+            <form action="cadastro.php" method="get"></form>
+            <label for="esp">Esportes</label>
+            <input type="checkbox" name="espo" id="esp"> <br>
+            <label for="tech">Tecnologia</label>
+            <input type="checkbox" name="tec" id="tech"> <br>
+            <label for="bem">Bem Estar</label>
+            <input type="checkbox" name="estar" id="bem"> <br>
+            <label for="nat">Natureza</label>
+            <input type="checkbox" name="selv" id="nat"> <br>
+        </fieldset>
+    </main>
+</body>
+</html>

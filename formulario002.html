@@ -12,7 +12,11 @@
         text-align: center;
     }
     main{
+        position: relative;
         text-align: center;
+        margin: auto;
+        min-width: 320px;
+        max-width: 700px;
     }
     </style>
 </head>
@@ -30,6 +34,10 @@
                 <p>
                     <label for="CNOME">NOME COMPLETO:</label>
                     <input type="text" name="PNOME" id="CNOME" placeholder="NOME" required minlength="10">
+                </p>
+                <p>
+                    <label for="email">E-MAIL:</label>
+                    <input type="email" name="dado" id="email" required placeholder="Seu E-mail aqui">
                 </p>
                  <p>
                      <label for="MEDIA">MÉDIA:</label>
